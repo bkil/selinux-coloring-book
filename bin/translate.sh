@@ -8,11 +8,11 @@ main() {
   mkdir -p "$WORKDIR/generated" || exit 1
 
   local LANG="hu"
-  local SVG="$WORKDIR/generated/selinux-coloring-book_source.svg"
-  local PDF="$WORKDIR/generated/`basename "$SVG" .svg`_$LANG.pdf"
+  local SVG="$WORKDIR/generated/selinux-coloring-book_source_$LANG.svg"
+  local PDF="$WORKDIR/generated/`basename "$SVG" .svg`.pdf"
 
   if [ -f "$SVG" ]; then
-    echo "info: using cached version of $SVG" >&2
+    echo "debug: using cached version of $SVG" >&2
   else
     po2svg $WORKDIR/SRC/"$LANG"/*.po "$SVG"
   fi
@@ -62,6 +62,7 @@ svg2pdf() {
 
       PAGENUMBER=`expr $PAGENUMBER + 1`
     done
+    echo "page generation done" >&2
   } |
   xargs echo |
   {
