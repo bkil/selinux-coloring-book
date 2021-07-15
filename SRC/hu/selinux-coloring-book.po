@@ -1,0 +1,623 @@
+# Hungarian translations for SELinux Coloring Book.
+# Copyright (C) 2021 Free Software Foundation, Inc.
+# This file is distributed under the same license as the SELinux Coloring Book.
+#
+# Balázs Úr <ur.balazs@fsf.hu>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: master\n"
+"Report-Msgid-Bugs-To: https://github.com/mairin/selinux-coloring-book/issues\n"
+"POT-Creation-Date: 2021-05-28 02:00+0000\n"
+"PO-Revision-Date: 2021-05-28 09:18+0200\n"
+"Last-Translator: Balázs Úr <ur.balazs@fsf.hu>\n"
+"Language-Team: Hungarian\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#: selinux-coloring-book_source.svg:533
+msgid "image/svg+xml"
+msgstr "image/svg+xml"
+
+#: selinux-coloring-book_source.svg:727 selinux-coloring-book_source.svg:1559
+#, no-wrap
+msgid "MÁIRÍN DUFFY"
+msgstr "MÁIRÍN DUFFY"
+
+#: selinux-coloring-book_source.svg:739 selinux-coloring-book_source.svg:1571
+#, no-wrap
+msgid "SELinux"
+msgstr "SELinux"
+
+#: selinux-coloring-book_source.svg:751 selinux-coloring-book_source.svg:1583
+#, no-wrap
+msgid "COLORING BOOK"
+msgstr "SZÍNEZŐKÖNYV"
+
+#: selinux-coloring-book_source.svg:763 selinux-coloring-book_source.svg:1595
+#, no-wrap
+msgid "DAN WALSH"
+msgstr "DAN WALSH"
+
+#: selinux-coloring-book_source.svg:775 selinux-coloring-book_source.svg:1607
+#, no-wrap
+msgid "written by"
+msgstr "írta:"
+
+#: selinux-coloring-book_source.svg:787 selinux-coloring-book_source.svg:1619
+#, no-wrap
+msgid "illustrated by"
+msgstr "rajzolta:"
+
+#: selinux-coloring-book_source.svg:799 selinux-coloring-book_source.svg:1631
+#, no-wrap
+msgid "\"It's raining cats and dogs!\""
+msgstr "„Macskák és kutyák hullanak az égből!”"
+
+#: selinux-coloring-book_source.svg:812 selinux-coloring-book_source.svg:1644
+#, no-wrap
+msgid "the"
+msgstr "A"
+
+#: selinux-coloring-book_source.svg:1537 selinux-coloring-book_source.svg:2369
+#, no-wrap
+msgid "LEARN"
+msgstr "TANULJ"
+
+#: selinux-coloring-book_source.svg:1542 selinux-coloring-book_source.svg:2374
+#, no-wrap
+msgid "as you"
+msgstr "színezés"
+
+#: selinux-coloring-book_source.svg:1547 selinux-coloring-book_source.svg:2379
+#, no-wrap
+msgid "COLOR!"
+msgstr "KÖZBEN!"
+
+#: selinux-coloring-book_source.svg:3052 selinux-coloring-book_source.svg:3450
+#: selinux-coloring-book_source.svg:5460 selinux-coloring-book_source.svg:6585
+#, no-wrap
+msgid "CAT"
+msgstr "CICA"
+
+#: selinux-coloring-book_source.svg:3064 selinux-coloring-book_source.svg:3541
+#: selinux-coloring-book_source.svg:5434 selinux-coloring-book_source.svg:5984
+#: selinux-coloring-book_source.svg:8631
+#, no-wrap
+msgid "DOG"
+msgstr "KUTYA"
+
+#: selinux-coloring-book_source.svg:3076
+#, no-wrap
+msgid "Type Enforcement"
+msgstr "Típuskényszerítés"
+
+#: selinux-coloring-book_source.svg:3088
+#, no-wrap
+msgid "The SELinux primary model of enforcement is called type enforcement. "
+msgstr "A SELinux kényszerítés elsődleges modelljét típuskényszerítésnek hívják. "
+
+#: selinux-coloring-book_source.svg:3093
+#, no-wrap
+msgid "Basically this means we define the label on a process based on its type, "
+msgstr "Alapvetően ez azt jelenti, hogy egy folyamaton a címkét annak típusa alapján, "
+
+#: selinux-coloring-book_source.svg:3098
+#, no-wrap
+msgid "and the label on a file system object based on its type."
+msgstr "és egy fájlrendszer-objektum címkéjét annak típusa alapján határozunk meg."
+
+#: selinux-coloring-book_source.svg:3110
+#, no-wrap
+msgid "Imagine a system where we define types on objects like cats and dogs. "
+msgstr "Képzelj egy rendszert, ahol objektumtípusokat határozunk meg mint cicák és kutyák. "
+
+#: selinux-coloring-book_source.svg:3115
+#, no-wrap
+msgid "A cat and dog are process types."
+msgstr "A cica és a kutya folyamattípusok."
+
+#: selinux-coloring-book_source.svg:3127
+#, no-wrap
+msgid "PROCESS TYPES"
+msgstr "FOLYAMATTÍPUSOK"
+
+#: selinux-coloring-book_source.svg:3222 selinux-coloring-book_source.svg:5972
+#: selinux-coloring-book_source.svg:8619
+#, no-wrap
+msgid "CAT_CHOW"
+msgstr "CICAKAJA"
+
+#: selinux-coloring-book_source.svg:3234
+#, no-wrap
+msgid "OBJECT TYPES"
+msgstr "OBJEKTUMTÍPUSOK"
+
+#: selinux-coloring-book_source.svg:3438 selinux-coloring-book_source.svg:3529
+#, no-wrap
+msgid "ALLOW"
+msgstr "ENGEDÉLYEZÉS"
+
+#: selinux-coloring-book_source.svg:3685
+#, no-wrap
+msgid "POLICY RULES"
+msgstr "HÁZIREND SZABÁLYOK"
+
+#: selinux-coloring-book_source.svg:3697
+#, no-wrap
+msgid "We have a class of objects that they want to interact with which we call"
+msgstr "Objektumosztályaink vannak, amelyekkel interakcióba akarnak lépni. Ezt ételnek"
+
+#: selinux-coloring-book_source.svg:3702
+#, no-wrap
+msgid "food. And I want to add types to the food, cat_chow and dog_chow.                        "
+msgstr "nevezünk. És az ételhez típusokat akarok adni, cicakaja és kutyakaja.                        "
+
+#: selinux-coloring-book_source.svg:3714
+#, no-wrap
+msgid "As a policy writer, I would say that a dog has permission to eat dog_chow                     "
+msgstr "Házirendíróként azt mondanám, hogy egy kutya jogosult a kutyakaja ételt                     "
+
+#: selinux-coloring-book_source.svg:3719
+#, no-wrap
+msgid "write this rule in policy, as shown below."
+msgstr "szabályt úgy írnánk a házirendbe, ahogy alább látható."
+
+#: selinux-coloring-book_source.svg:3816 selinux-coloring-book_source.svg:6572
+#, no-wrap
+msgid "DOG_CHOW"
+msgstr "KUTYAKAJA"
+
+#: selinux-coloring-book_source.svg:4259 selinux-coloring-book_source.svg:4304
+#: selinux-coloring-book_source.svg:9006 selinux-coloring-book_source.svg:9035
+#: selinux-coloring-book_source.svg:9595 selinux-coloring-book_source.svg:10343
+#: selinux-coloring-book_source.svg:10417
+#: selinux-coloring-book_source.svg:10847
+#: selinux-coloring-book_source.svg:10872
+#: selinux-coloring-book_source.svg:10897
+#: selinux-coloring-book_source.svg:11165
+#: selinux-coloring-book_source.svg:11182
+#: selinux-coloring-book_source.svg:11219
+#: selinux-coloring-book_source.svg:11234
+#: selinux-coloring-book_source.svg:11279
+#: selinux-coloring-book_source.svg:11295
+#: selinux-coloring-book_source.svg:12286
+#: selinux-coloring-book_source.svg:12301
+#, no-wrap
+msgid ":"
+msgstr ":"
+
+#: selinux-coloring-book_source.svg:4257
+#, no-wrap
+msgid "CAT_CHOW<_:tspan-1/>FOOD"
+msgstr "CICAKAJA<_:tspan-1/>ÉTEL"
+
+#: selinux-coloring-book_source.svg:4271 selinux-coloring-book_source.svg:4316
+#, no-wrap
+msgid "EAT"
+msgstr "ENNI"
+
+#: selinux-coloring-book_source.svg:4302
+#, no-wrap
+msgid "DOG_CHOW<_:tspan-1/>FOOD"
+msgstr "KUTYAKAJA<_:tspan-1/>ÉTEL"
+
+#: selinux-coloring-book_source.svg:4729
+#, no-wrap
+msgid "food and a cat has permission to eat cat_chow food. In SELinux we would "
+msgstr "enni, és egy cica jogosult a cicakaja ételt enni. A SELinuxban ezt a "
+
+#: selinux-coloring-book_source.svg:5390
+#, no-wrap
+msgid "YUMMY!"
+msgstr "NYAMM!"
+
+#: selinux-coloring-book_source.svg:5403
+#, no-wrap
+msgid "DELICIOUS!"
+msgstr "FINCSI!"
+
+#: selinux-coloring-book_source.svg:5421
+#, no-wrap
+msgid "DOG_CHOW:FOOD"
+msgstr "KUTYAKAJA:ÉTEL"
+
+#: selinux-coloring-book_source.svg:5447
+#, no-wrap
+msgid "CAT_CHOW:FOOD"
+msgstr "CICAKAJA:ÉTEL"
+
+#: selinux-coloring-book_source.svg:5478
+#, no-wrap
+msgid "With these rules the kernel would allow the cat process to eat food labeled "
+msgstr "Ezekkel a szabályokkal a rendszermag engedélyezné a cica folyamatnak a "
+
+#: selinux-coloring-book_source.svg:5483
+#, no-wrap
+msgid "cat_chow and the dog to eat food labeled dog_chow."
+msgstr "cicakaja címkéjű, és a kutyának a kutyakaja címkéjű étel evését."
+
+#: selinux-coloring-book_source.svg:5996 selinux-coloring-book_source.svg:6598
+#: selinux-coloring-book_source.svg:8643 selinux-coloring-book_source.svg:9482
+#: selinux-coloring-book_source.svg:11750
+#: selinux-coloring-book_source.svg:12314
+#, no-wrap
+msgid "KERNEL"
+msgstr "RENDSZERMAG"
+
+#: selinux-coloring-book_source.svg:6010
+#, no-wrap
+msgid "But in an SELinux system everything is denied by default. This means that if "
+msgstr "De egy SELinux rendszerben alaphelyzetben minden tiltott. Ez azt jelenti, hogy "
+
+#: selinux-coloring-book_source.svg:6015
+#, no-wrap
+msgid "the dog process tried to eat the cat_chow, the kernel would prevent it."
+msgstr "ha a kutya folyamat cicakaját próbálna enni, a rendszermag megakadályozná."
+
+#: selinux-coloring-book_source.svg:6028
+#, no-wrap
+msgid "Likewise cats would not be allowed to touch dog food."
+msgstr "Ugyanúgy a cicáknak sem volna szabad kutyaételhez nyúlniuk."
+
+#: selinux-coloring-book_source.svg:6548
+#, no-wrap
+msgid "NO! BAD CAT!"
+msgstr "NEM! ROSSZ CICA!"
+
+#: selinux-coloring-book_source.svg:6553
+#, no-wrap
+msgid "DON'T EAT THAT!"
+msgstr "NE EDD MEG AZT!"
+
+#: selinux-coloring-book_source.svg:6619
+#, no-wrap
+msgid "We've typed the dog process and cat process, but what happens if you have "
+msgstr "Leírtuk a kutyafolyamatot és a cicafolyamatot, de mi történik, ha több "
+
+#: selinux-coloring-book_source.svg:6624
+#, no-wrap
+msgid "multiple dogs processes: Fido and Spot. You want to stop Fido from eating "
+msgstr "kutyafolyamatod van: Fido és Spot. Meg akarod akadályozni, hogy Fido egyen "
+
+#: selinux-coloring-book_source.svg:6629
+#, no-wrap
+msgid "Spot's dog_chow."
+msgstr "Spot kutyakaja ételéből."
+
+#: selinux-coloring-book_source.svg:6642
+#, no-wrap
+msgid "MCS Enforcement"
+msgstr "MCS kényszerítés"
+
+#: selinux-coloring-book_source.svg:7183 selinux-coloring-book_source.svg:9618
+#: selinux-coloring-book_source.svg:10877
+#, no-wrap
+msgid "FIDO"
+msgstr "FIDO"
+
+#: selinux-coloring-book_source.svg:7196
+#, no-wrap
+msgid "SPOT"
+msgstr "SPOT"
+
+#: selinux-coloring-book_source.svg:7209
+#, no-wrap
+msgid "One solution would be to create lots of new types, like Fido_dog and "
+msgstr "Egy megoldás lehetne rengeteg új típus létrehozása, mint Fido_kutya és "
+
+#: selinux-coloring-book_source.svg:7214
+#, no-wrap
+msgid "Fido_dog_chow. But, this will quickly become unruly because all dogs "
+msgstr "Fido_kutyakaja. De ez gyorsan engedetlenné válik, mert az összes kutya "
+
+#: selinux-coloring-book_source.svg:7219
+#, no-wrap
+msgid "have pretty much the same permissions."
+msgstr "nagyjából ugyanazokkal a jogosultságokkal rendelkezik."
+
+#: selinux-coloring-book_source.svg:7229
+#, no-wrap
+msgid "To handle this we developed a new form of enforcement, which we call "
+msgstr "Ennek kezelésére a kényszerítés új formáját fejlesztettük ki, amelyet több-"
+
+#: selinux-coloring-book_source.svg:7234
+#, no-wrap
+msgid "Multi Category Security (MCS). In MCS, we add another section of the label "
+msgstr "kategóriás biztonságnak (MCS) hívunk. Az MCS-ben hozzáadjuk a címke egy másik "
+
+#: selinux-coloring-book_source.svg:7239
+#, no-wrap
+msgid "which we can apply to the dog process and to the dog_chow food. Now we "
+msgstr "szakaszát, amelyet alkalmazhatunk a kutyafolyamatra és a kutyakaja ételre. "
+
+#: selinux-coloring-book_source.svg:7244
+#, no-wrap
+msgid "label the dog process as dog:random1 (Fido) and dog:random2 (Spot)."
+msgstr "Most a kutyafolyamat címkéi kutya:valami1 (Fido) és kutya:valami2 (Spot)."
+
+#: selinux-coloring-book_source.svg:7532
+#, no-wrap
+msgid "DOG:RANDOM1"
+msgstr "KUTYA:VALAMI1"
+
+#: selinux-coloring-book_source.svg:7545
+#, no-wrap
+msgid "DOG:RANDOM2"
+msgstr "KUTYA:VALAMI2"
+
+#: selinux-coloring-book_source.svg:7860
+#, no-wrap
+msgid "We label the dog chow as dog_chow:random1 (Fido) and "
+msgstr "A kutyakaját úgy címkézzük, hogy kutyakaja:valami1 (Fido) "
+
+#: selinux-coloring-book_source.svg:7865
+#, no-wrap
+msgid "dog_chow:random2 (Spot)."
+msgstr "és kutyakaja:valami2 (Spot)."
+
+#: selinux-coloring-book_source.svg:8066 selinux-coloring-book_source.svg:8085
+#, no-wrap
+msgid "DOG_CHOW:"
+msgstr "KUTYAKAJA:"
+
+#: selinux-coloring-book_source.svg:8072
+#, no-wrap
+msgid "RANDOM1"
+msgstr "VALAMI1"
+
+#: selinux-coloring-book_source.svg:8090
+#, no-wrap
+msgid "RANDOM2"
+msgstr "VALAMI2"
+
+#: selinux-coloring-book_source.svg:8111
+#, no-wrap
+msgid "MCS rules say that if the type enforcement rules are OK and the random MCS labels "
+msgstr "Ha az MCS-szabályok alapján a típuskényszerítő szabályok rendben vannak és "
+
+#: selinux-coloring-book_source.svg:8116
+#, no-wrap
+msgid "match exactly, then the access is allowed, if not it is denied.                   "
+msgstr "valami MCS-címkék pontosan illeszkednek, akkor hozzáférhető, egyébként tiltott.                   "
+
+#: selinux-coloring-book_source.svg:8132
+#, no-wrap
+msgid "Fido (dog:random1) trying to eat cat_chow:food is denied by type"
+msgstr "Fido (kutya:valami1) próbál cicakaja:ételt enni, de a típuskényszerítés"
+
+#: selinux-coloring-book_source.svg:8137
+#, no-wrap
+msgid "enforcement."
+msgstr "megtiltja."
+
+#: selinux-coloring-book_source.svg:8657
+#, no-wrap
+msgid "Fido (dog:random1) is allowed to eat dog_chow:random1."
+msgstr "Fido (kutya:valami1) ehet a kutyakaja:valami1 ételből."
+
+#: selinux-coloring-book_source.svg:8670
+#, no-wrap
+msgid "TYPE ENFORCEMENT"
+msgstr "TÍPUSKÉNYSZERÍTÉS"
+
+#: selinux-coloring-book_source.svg:9003
+#, no-wrap
+msgid "DOG<_:tspan-1/>RANDOM1"
+msgstr "KUTYA<_:tspan-1/>VALAMI1"
+
+#: selinux-coloring-book_source.svg:9032
+#, no-wrap
+msgid "DOG_CHOW<_:tspan-1/>RANDOM1"
+msgstr "KUTYAKAJA<_:tspan-1/>VALAMI1"
+
+#: selinux-coloring-book_source.svg:9075
+#, no-wrap
+msgid "Fido (dog:random1) denied to eat spot's (dog_chow:random2) food."
+msgstr "Fido (kutya:valami1) nem ehet Spot (kutyakaja:valami2) ételéből."
+
+#: selinux-coloring-book_source.svg:9592
+#, no-wrap
+msgid "DOG_CHOW<_:tspan-1/>SPOT"
+msgstr "KUTYAKAJA<_:tspan-1/>SPOT"
+
+#: selinux-coloring-book_source.svg:9615
+#, no-wrap
+msgid ":<_:tspan-1/>"
+msgstr ":<_:tspan-1/>"
+
+#: selinux-coloring-book_source.svg:9612
+#, no-wrap
+msgid "DOG<_:tspan-1/>"
+msgstr "KUTYA<_:tspan-1/>"
+
+#: selinux-coloring-book_source.svg:9633
+#, no-wrap
+msgid "MCS ENFORCEMENT"
+msgstr "MCS KÉNYSZERÍTÉS"
+
+#: selinux-coloring-book_source.svg:9659
+#, no-wrap
+msgid "Another form of SELinux enforcement, used much less frequently, is called "
+msgstr "A SELinux kényszerítés egy másik, sokkal ritkábban használt formáját több-"
+
+#: selinux-coloring-book_source.svg:9664
+#, no-wrap
+msgid "Multi Level Security (MLS); it was developed back in the 60s and is used "
+msgstr "szintű biztonságnak (MLS) hívják. A 60-as években fejlesztették ki, és főleg "
+
+#: selinux-coloring-book_source.svg:9669
+#, no-wrap
+msgid "mainly in trusted operating systems like Trusted Solaris."
+msgstr "megbízható operációs rendszereknél használták, mint például a Trusted Solaris."
+
+#: selinux-coloring-book_source.svg:9679
+#, no-wrap
+msgid "The main idea is to control processes based on the level of the data they "
+msgstr "Az alapötlet a folyamatoknak az adatok azon szintje alapján való szabályzása, "
+
+#: selinux-coloring-book_source.svg:9684
+#, no-wrap
+msgid "will be using. A secret process can not read top secret data."
+msgstr "amelyet használni fognak. Egy titkos folyamat nem tud bizalmas adatot olvasni."
+
+#: selinux-coloring-book_source.svg:9694
+#, no-wrap
+msgid "Instead of talking about different dogs, we now look at different breeds. "
+msgstr "A különböző kutyákról való beszélgetés helyett nézzük a különböző fajtákat. "
+
+#: selinux-coloring-book_source.svg:9699
+#, no-wrap
+msgid "We might have a Greyhound and a Chihuahua."
+msgstr "Lehet, hogy van egy agárunk és egy csivavánk."
+
+#: selinux-coloring-book_source.svg:9712
+#, no-wrap
+msgid "MLS Enforcement"
+msgstr "MLS kényszerítés"
+
+#: selinux-coloring-book_source.svg:9730 selinux-coloring-book_source.svg:10852
+#, no-wrap
+msgid "GREYHOUND"
+msgstr "AGÁR"
+
+#: selinux-coloring-book_source.svg:9742 selinux-coloring-book_source.svg:11167
+#: selinux-coloring-book_source.svg:11184
+#, no-wrap
+msgid "CHIHUAHUA"
+msgstr "CSIVAVA"
+
+#: selinux-coloring-book_source.svg:10211
+#, no-wrap
+msgid "We might want to allow the Greyhound to eat any dog food, but a Chihuahua "
+msgstr "Meg akarjuk engedni az agárnak, hogy bármilyen kutyakaját egyen, de egy csivava "
+
+#: selinux-coloring-book_source.svg:10216
+#, no-wrap
+msgid "could choke if it tried to eat Greyhound dog food."
+msgstr "megfulladhat, ha megpróbál enni az agár kutyakajájából."
+
+#: selinux-coloring-book_source.svg:10240
+#, no-wrap
+msgid "We want to label the Greyhound as dog:Greyhound and his dog food as "
+msgstr "Az agarat kutya:agár címkével, a kutyakajáját kutya_kaja:agár címkével "
+
+#: selinux-coloring-book_source.svg:10245
+#, no-wrap
+msgid "dog_chow:Greyhound, and label the Chihuahua as dog:Chihuahua and his "
+msgstr "szeretnénk ellátni, míg a csivava kutya:csivava és a kutyakajája "
+
+#: selinux-coloring-book_source.svg:10250
+#, no-wrap
+msgid "food as dog_chow:Chihuahua."
+msgstr "kutyakaja:csivava címkét fog kapni."
+
+#: selinux-coloring-book_source.svg:10341
+#, no-wrap
+msgid "DOG_CHOW<_:tspan-1/>CHIHUAHUA"
+msgstr "KUTYAKAJA<_:tspan-1/>CSIVAVA"
+
+#: selinux-coloring-book_source.svg:10415
+#: selinux-coloring-book_source.svg:11277
+#, no-wrap
+msgid "DOG_CHOW<_:tspan-1/>GREYHOUND"
+msgstr "KUTYAKAJA<_:tspan-1/>AGÁR"
+
+#: selinux-coloring-book_source.svg:10430
+#, no-wrap
+msgid "With the MLS policy, we would have the MLS Greyhound label dominate the "
+msgstr "Az MLS házirenddel az MLS agár címke uralná a csivava címkét. Ez azt "
+
+#: selinux-coloring-book_source.svg:10435
+#, no-wrap
+msgid "Chihuahua label. This means dog:Greyhound is allowed to eat "
+msgstr "jelenti, hogy a kutya:agár számára megengedett a kutyakaja:agár és a "
+
+#: selinux-coloring-book_source.svg:10440
+#, no-wrap
+msgid "dog_chow:Greyhound and dog_chow:Chihuahua."
+msgstr "kutyakaja:csivava evése."
+
+#: selinux-coloring-book_source.svg:10845
+#: selinux-coloring-book_source.svg:10870
+#, no-wrap
+msgid "DOG_CHOW<_:tspan-1/>"
+msgstr "KUTYAKAJA<_:tspan-1/>"
+
+#: selinux-coloring-book_source.svg:10895
+#: selinux-coloring-book_source.svg:12284
+#, no-wrap
+msgid "DOG<_:tspan-1/>GREYHOUND"
+msgstr "KUTYA<_:tspan-1/>AGÁR"
+
+#: selinux-coloring-book_source.svg:11163
+#: selinux-coloring-book_source.svg:11180
+#, no-wrap
+msgid "DOG_CHOW<_:tspan-1/><_:tspan-2/>"
+msgstr "KUTYAKAJA<_:tspan-1/><_:tspan-2/>"
+
+#: selinux-coloring-book_source.svg:11217
+#: selinux-coloring-book_source.svg:11232
+#: selinux-coloring-book_source.svg:11293
+#: selinux-coloring-book_source.svg:12299
+#, no-wrap
+msgid "DOG<_:tspan-1/>CHIHUAHUA"
+msgstr "KUTYA<_:tspan-1/>CSIVAVA"
+
+#: selinux-coloring-book_source.svg:11255
+#, no-wrap
+msgid "But dog:Chihuahua is not allowed to eat dog_chow:Greyhound. "
+msgstr "De a kutya:csivava számára nem engedélyezett a kutyakaja:agár evése. "
+
+#: selinux-coloring-book_source.svg:11308
+#, no-wrap
+msgid "THIS IS A BIT"
+msgstr "EZ EGY KICSIT"
+
+#: selinux-coloring-book_source.svg:11313
+#, no-wrap
+msgid "TOO BEEFY"
+msgstr "TÚL HÚSOS"
+
+#: selinux-coloring-book_source.svg:11318
+#, no-wrap
+msgid "FOR YOU..."
+msgstr "NEKED…"
+
+#: selinux-coloring-book_source.svg:11763
+#, no-wrap
+msgid "Of course, dog:Greyhound and dog:Chihuahua are still prevented from "
+msgstr "Természetesen a típuskényszerítés továbbra is megakadályozza a kutya:agár "
+
+#: selinux-coloring-book_source.svg:11768
+#, no-wrap
+msgid "eating cat_chow:Siamese by type enforcement, even if the MLS type "
+msgstr "és kutya:csivava számára a cicakaja:sziámi evését, akkor is ha az agár "
+
+#: selinux-coloring-book_source.svg:11773
+#, no-wrap
+msgid "Greyhound dominates Siamese."
+msgstr "MLS-típus uralja a sziámit."
+
+#: selinux-coloring-book_source.svg:12261
+#, no-wrap
+msgid "CAT_CHOW:"
+msgstr "CICAKAJA:"
+
+#: selinux-coloring-book_source.svg:12266
+#, no-wrap
+msgid "SIAMESE"
+msgstr "SZIÁMI"
+
+#: selinux-coloring-book_source.svg:12653
+#, no-wrap
+msgid "Learn more at opensource.com:"
+msgstr "Tudj meg többet az opensource.com címen:"
+
+#: selinux-coloring-book_source.svg:12665
+#, no-wrap
+msgid "http://ur1.ca/g12br"
+msgstr "http://ur1.ca/g12br"
