@@ -22,7 +22,7 @@ po2svg() {
   itstool \
     -m "$MO" \
     -o "$SVG" \
-    SRC/selinux-coloring-book_source.svg
+    "SRC/selinux-coloring-book_source.svg"
 }
 
 svg2pdf() {
@@ -49,6 +49,8 @@ svg2pdf() {
       local PDFPAGE="generated/page-$PAGENUMBER.pdf"
       echo "$PDFPAGE"
       rsvg-convert --x-zoom 0.7787 --y-zoom 0.85 -f pdf -o "$PDFPAGE" "$SVGPAGE"
+      # inkscape --export-pdf="$PDFPAGE" "$SVGPAGE"
+
       PAGENUMBER=`expr $PAGENUMBER + 1`
     done
   } |
@@ -59,8 +61,8 @@ svg2pdf() {
   }
 }
 
-get_fonts() {
-  sed "s~>~&\n~g" generated/selinux-coloring-book_source_HU.svg |
+list_fonts() {
+  sed "s~>~&\n~g" "generated/selinux-coloring-book_source_HU.svg" |
   grep 'font-family:' |
   sed -r 's~.*font-family:([^;"]*)[";].*~\1~' |
   uniq |
@@ -68,11 +70,3 @@ get_fonts() {
 }
 
 main "$@"
-
-exit $?
-
-rsvg-convert -f pdf -o x.pdf in.svg
-inkscape --export-pdf=x.pdf in.svg
-
-  <g inkscape:label="Front Cover" inkscape:groupmode="layer" id="layer1" transform="translate(0,-62.35975)" style="display:inline" sodipodi:insensitive="true">
-  <g transform="translate(0,-62.35975)" id="g5994" inkscape:groupmode="layer" inkscape:label="Pages 1" style="display:none" sodipodi:insensitive="true">
