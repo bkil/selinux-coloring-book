@@ -10,7 +10,13 @@ main() {
   local LANG="hu"
   local SVG="$WORKDIR/generated/selinux-coloring-book_source.svg"
   local PDF="$WORKDIR/generated/`basename "$SVG" .svg`_$LANG.pdf"
-  po2svg $WORKDIR/SRC/"$LANG"/*.po "$SVG" &&
+
+  if [ -f "$SVG" ]; then
+    echo "info: using cached version of $SVG" >&2
+  else
+    po2svg $WORKDIR/SRC/"$LANG"/*.po "$SVG"
+  fi
+
   svg2pdf "$SVG" "$PDF"
 }
 
