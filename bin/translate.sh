@@ -7,6 +7,8 @@ WORKDIR="`dirname "$0"`/.."
 main() {
   mkdir -p "$WORKDIR/generated" || exit 1
 
+  get_fonts
+
   local LANG="hu"
   local SVG="$WORKDIR/generated/selinux-coloring-book_source_$LANG.svg"
   local PDF="$WORKDIR/generated/`basename "$SVG" .svg`.pdf"
@@ -71,8 +73,58 @@ svg2pdf() {
   }
 }
 
+get_fonts() {
+  local FONTDIR="$HOME/.fonts"
+  mkdir -p "$FONTDIR"
+  local NEW=""
+  local ZIP="download_extract_zip $FONTDIR"
+  local GET="download $FONTDIR"
+
+  # https://www.dafont.com/architect-s-daughter.font
+  $ZIP "https://dl.dafont.com/dl/?f=architect_s_daughter" "ArchitectsDaughter.ttf" && NEW=1
+
+  # https://www.dafont.com/titan-one.font
+  $ZIP "https://dl.dafont.com/dl/?f=titan_one" "TitanOne-Regular.ttf" && NEW=1
+
+  # http://theleagueofmoveabletype.com/ Tyler Finck
+  $GET https://github.com/theleagueof/knewave/raw/master/knewave.ttf && NEW=1
+  $GET https://github.com/theleagueof/knewave/raw/master/knewave-outline.ttf && NEW=1
+
+  if [ -n "$NEW" ]; then
+    echo "debug: regenerating font cache" >&2
+    fc-cache -f -v "$FONTDIR"
+  fi
+}
+
 download() {
-  echo wget --directory-prefix="$HOME/" --no-clobber --output-file="$2" "$1"
+  local FONTDIR="$1"
+  local URL="$2"
+  if [ $# -eq 3 ]; then
+    local BASE="$3"
+  else
+    local BASE="`basename $URL`"
+  fi
+  local FILE="$FONTDIR/$BASE"
+
+  if [ -f "$FILE" ]; then
+    return 1
+  else
+    wget --output-document="$FILE" "$URL"
+  fi
+}
+
+download_extract_zip() {
+  local FONTDIR="$1"
+  local URL="$2"
+  local FILE="$3"
+  local TMP="$WORKDIR/generated/tmp.zip"
+
+  if [ -f "$FONTDIR/$FILE" ]; then
+    return 1
+  else
+    wget --no-clobber --output-document="$TMP" "$URL"
+    unzip -d "$FONTDIR" "$TMP" "$FILE"
+  fi
 }
 
 list_fonts() {
