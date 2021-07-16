@@ -34,6 +34,8 @@ po2svg() {
     s~(;font-family:Interstate)-Regular~\1~g
     s~(;font-family:)Sans~\1FreeSans~g
     s~(;font-family:)Knewave Outline~\1Atavyros~g
+    s~(;font-family:)Knewave(;)~\1,Luckiest Guy\2~g
+    s~(;font-family:Miso)~\1,Amiri~g
     " "$SVG"
 }
 
