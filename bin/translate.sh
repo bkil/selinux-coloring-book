@@ -1,5 +1,5 @@
 #!/bin/sh
-# sudo apt install gettext itstool librsvg2-bin fonts-georgewilliams fonts-ldco poppler-utils
+# sudo apt install gettext itstool librsvg2-bin fonts-georgewilliams poppler-utils
 # TODO: missing some more fonts
 
 WORKDIR="`dirname "$0"`/.."
@@ -13,12 +13,7 @@ main() {
   local SVG="$WORKDIR/generated/selinux-coloring-book_source_$LANG.svg"
   local PDF="$WORKDIR/generated/`basename "$SVG" .svg`.pdf"
 
-  if [ -f "$SVG" ]; then
-    echo "debug: using cached version of $SVG" >&2
-  else
-    po2svg $WORKDIR/SRC/"$LANG"/*.po "$SVG"
-  fi
-
+  po2svg $WORKDIR/SRC/"$LANG"/*.po "$SVG" &&
   svg2pdf "$SVG" "$PDF"
 }
 
@@ -33,7 +28,11 @@ po2svg() {
     -m "$MO" \
     -o "$SVG" \
     "$WORKDIR/SRC/selinux-coloring-book_source.svg" &&
-  sed -i -r 's~(</?)default:(tspan)~\1\2~g' "$SVG"
+  sed -i -r "
+    s~(</?)default:(tspan)~\1\2~g
+    s~(;font-family:Interstate)-Regular~\1~g
+    s~(;font-family:)Sans~\1FreeSans~g
+    " "$SVG"
 }
 
 svg2pdf() {
@@ -96,6 +95,9 @@ get_fonts() {
   # https://www.ffonts.net/Luckiest-Guy.font Astigmatic One Eye Typographic Institute - Brian J. Bonislawsky
   $ZIP https://www.ffonts.net/Luckiest-Guy.font.zip LuckiestGuy.ttf && NEW=1
 
+  # https://www.ffonts.net/Miso.font http://martennettelbladt.se/miso/ Copyright (c) Mårten Nettelbladt, 2006
+  $ZIP https://www.ffonts.net/Miso.font.zip miso-regular.ttf && NEW=1
+
   if [ -n "$NEW" ]; then
     echo "debug: regenerating font cache" >&2
     fc-cache -f -v "$FONTDIR"
@@ -128,7 +130,7 @@ download_extract_zip() {
   if [ -f "$FONTDIR/$FILE" ]; then
     return 1
   else
-    wget --no-clobber --output-document="$TMP" "$URL"
+    wget --output-document="$TMP" "$URL"
     unzip -d "$FONTDIR" "$TMP" "$FILE"
   fi
 }
