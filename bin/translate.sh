@@ -6,6 +6,7 @@ WORKDIR="`dirname "$0"`/.."
 
 main() {
   mkdir -p "$WORKDIR/generated" || exit 1
+  [ "$1" = "-r" ] && FORCE_RSVG="1"
 
   get_fonts
 
@@ -32,6 +33,7 @@ po2svg() {
     s~(</?)default:(tspan)~\1\2~g
     s~(;font-family:Interstate)-Regular~\1~g
     s~(;font-family:)Sans~\1FreeSans~g
+    s~(;font-family:)Knewave Outline~\1Atavyros~g
     " "$SVG"
 }
 
@@ -58,8 +60,7 @@ svg2pdf() {
       
       local PDFPAGE="$WORKDIR/generated/page-$PAGENUMBER.pdf"
       echo "$PDFPAGE"
-      rsvg-convert --x-zoom 0.7787 --y-zoom 0.85 -f pdf -o "$PDFPAGE" "$SVGPAGE" || return 1
-      # inkscape --export-pdf="$PDFPAGE" "$SVGPAGE"
+      svg2pdf_single_page "$SVGPAGE" "$PDFPAGE"
 
       PAGENUMBER=`expr $PAGENUMBER + 1`
     done
@@ -70,6 +71,16 @@ svg2pdf() {
     read PDFNAMES
     pdfunite $PDFNAMES "$PDF" || return 1
   }
+}
+
+svg2pdf_single_page() {
+  local SVGPAGE="$1"
+  local PDFPAGE="$2"
+  if [ -z "$FORCE_RSVG" ] && which inkscape > /dev/null; then
+    inkscape --export-pdf="$PDFPAGE" "$SVGPAGE"
+  else
+    rsvg-convert --x-zoom 0.7787 --y-zoom 0.85 -f pdf -o "$PDFPAGE" "$SVGPAGE"
+  fi
 }
 
 get_fonts() {
