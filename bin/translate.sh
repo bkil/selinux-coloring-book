@@ -90,6 +90,12 @@ get_fonts() {
   $GET https://github.com/theleagueof/knewave/raw/master/knewave.ttf && NEW=1
   $GET https://github.com/theleagueof/knewave/raw/master/knewave-outline.ttf && NEW=1
 
+  # https://dafontfamily.com/interstate-font-free-download/ 1993 (c) Tobias Frere-Jones
+  $ZIP https://dafontfamily.com/download/interstate-font/ Interstate-Regular-Font.ttf && NEW=1
+
+  # https://www.ffonts.net/Luckiest-Guy.font Astigmatic One Eye Typographic Institute - Brian J. Bonislawsky
+  $ZIP https://www.ffonts.net/Luckiest-Guy.font.zip LuckiestGuy.ttf && NEW=1
+
   if [ -n "$NEW" ]; then
     echo "debug: regenerating font cache" >&2
     fc-cache -f -v "$FONTDIR"
