@@ -58,6 +58,8 @@ svg2pdf() {
 
         s~(id=\"$ID\".*transform=\"translate\()0,-62.35975(\)\")~\1(-2000,-2062.35975)\2~
         s~(transform=\"translate\()0,-62.35975(\)\".*id=\"$ID\")~\1(-2000,-2062.35975)\2~
+        s~http://ur1\.ca/.*$~&\n<text sodipodi:linespacing=\"125\%\" id=\"text98765\" y=\"200\" x=\"200\" style=\"font-size:16.13882828px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans\" xml:space=\"preserve\"><tspan id=\"tspan98765\" style=\"font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#222222;font-family:Interstate;-inkscape-font-specification:Interstate-Regular\" y=\"200\" x=\"200\" sodipodi:role=\"line\">Fordította: Úr Balázs</tspan></text>~
+
         " "$SVG" > "$SVGPAGE"
       
       local PDFPAGE="$WORKDIR/generated/page-$PAGENUMBER.pdf"
