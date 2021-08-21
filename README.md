@@ -19,6 +19,7 @@ Based on an opensource.com article by Dan Walsh that is available here: http://o
 * **German (de)**:  Christian Richter <christian.richter@portachtzig.com>
                     Sarah Rehbock <sarah.rehbock@portachtzig.com>
                     @portachtzig/owners 
+* **Hungarian (hu)**: Balázs Úr <https://urbalazs.hu/>
 
 ## Other Contributors
 
